@@ -1,0 +1,73 @@
+{
+  "code": "200",
+  "data": {
+    "list": [{
+      "region":[{
+        "name":"不限",
+        "id":1,
+        "active":true
+      },{
+        "name":"雁塔区",
+        "id":1,
+        "active":false
+      }],
+      "rentalscope":[{
+        "name":"不限",
+        "id":0,
+        "sql":"",
+        "active":true
+      },{
+        "name":"200元以下",
+        "id":1,
+        "sql":"<=200",
+        "active":false
+      },{
+        "name":"200元-400元",
+        "id":2,
+        "sql":"BETWEEN 200 AND 400",
+        "active":false
+      },{
+        "name":"400元-600元",
+        "id":3,
+        "sql":"BETWEEN 400 AND 600",
+        "active":false
+      },{
+        "name":"600元-700元",
+        "id":4,
+        "sql":"BETWEEN 600 AND 700",
+        "active":false
+      }],
+      "carportType":[{
+        "name":"不限",
+        "id":null,
+        "active":true
+      },{
+        "name":"露天车位",
+        "id":1,
+        "active":false
+      },{
+        "name":"机械车位",
+        "id":2,
+        "active":false
+      },{
+        "name":"地下车位",
+        "id":3,
+        "active":false
+      }],
+      "enterpriseType":[{
+        "name":"不限",
+        "id":null,
+        "active":true
+      },{
+        "name":"个人车位",
+        "id":1,
+        "active":false
+      },{
+        "name":"企业车位",
+        "id":2,
+        "active":false
+      }]
+    }]
+
+  }
+}

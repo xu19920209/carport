@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="carport@192.168.8.5">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="51express"/>
+    <schema id="3" parent="1" name="51parking"/>
+    <schema id="4" parent="1" name="51pull"/>
+    <schema id="5" parent="1" name="aaenglish"/>
+    <schema id="6" parent="1" name="aatest"/>
+    <schema id="7" parent="1" name="aa测试"/>
+    <schema id="8" parent="1" name="car"/>
+    <schema id="9" parent="1" name="carport">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="1" name="englishitem"/>
+    <schema id="11" parent="1" name="expressbagdata"/>
+    <schema id="12" parent="1" name="information_schema"/>
+    <schema id="13" parent="1" name="mysql"/>
+    <schema id="14" parent="1" name="num"/>
+    <schema id="15" parent="1" name="numysql"/>
+    <schema id="16" parent="1" name="salejool"/>
+    <schema id="17" parent="1" name="shirosql"/>
+    <schema id="18" parent="1" name="spring_boot"/>
+    <schema id="19" parent="1" name="spring_data"/>
+    <schema id="20" parent="1" name="springcrud"/>
+    <schema id="21" parent="1" name="springmvcdemo"/>
+    <schema id="22" parent="1" name="springsecurity"/>
+    <schema id="23" parent="1" name="test"/>
+    <schema id="24" parent="1" name="tywebsite"/>
+    <schema id="25" parent="1" name="website"/>
+    <table id="26" parent="9" name="a_user"/>
+    <table id="27" parent="9" name="b_carport_out"/>
+    <table id="28" parent="9" name="c_carport_img"/>
+    <table id="29" parent="9" name="d_review_back"/>
+    <table id="30" parent="9" name="e_update"/>
+    <table id="31" parent="9" name="f_relation_me"/>
+    <table id="32" parent="9" name="g_look_me"/>
+    <table id="33" parent="9" name="hmy_collect"/>
+    <table id="34" parent="9" name="i_feedback"/>
+    <table id="35" parent="9" name="t_accesstoken"/>
+    <column id="36" parent="26" name="aid">
+      <Position>1</Position>
+      <Comment>AID</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="26" name="user_name">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="38" parent="26" name="name">
+      <Position>3</Position>
+      <Comment>昵称</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="39" parent="26" name="tel">
+      <Position>4</Position>
+      <Comment>手机号</Comment>
+      <DataType>VARCHAR(11)|12</DataType>
+    </column>
+    <column id="40" parent="26" name="password">
+      <Position>5</Position>
+      <Comment>密码</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="41" parent="26" name="flag">
+      <Position>6</Position>
+      <Comment>账户类型（1个人2，企业）</Comment>
+      <DataType>VARCHAR(2)|12</DataType>
+    </column>
+    <column id="42" parent="26" name="ioc">
+      <Position>7</Position>
+      <Comment>头像</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+    </column>
+    <column id="43" parent="26" name="sex">
+      <Position>8</Position>
+      <Comment>性别（1女2男3保密）</Comment>
+      <DataType>VARCHAR(2)|12</DataType>
+    </column>
+    <column id="44" parent="26" name="province">
+      <Position>9</Position>
+      <Comment>省</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="45" parent="26" name="city">
+      <Position>10</Position>
+      <Comment>市</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="46" parent="26" name="region">
+      <Position>11</Position>
+      <Comment>区</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="47" parent="26" name="birthday">
+      <Position>12</Position>
+      <Comment>生日</Comment>
+      <DataType>DATE(10)|91</DataType>
+    </column>
+    <column id="48" parent="26" name="address">
+      <Position>13</Position>
+      <Comment>联系地址</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+    </column>
+    <column id="49" parent="26" name="email">
+      <Position>14</Position>
+      <Comment>邮箱</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="50" parent="26" name="phone">
+      <Position>15</Position>
+      <Comment>联系电话</Comment>
+      <DataType>VARCHAR(11)|12</DataType>
+    </column>
+    <column id="51" parent="26" name="qq">
+      <Position>16</Position>
+      <Comment>QQ</Comment>
+      <DataType>VARCHAR(11)|12</DataType>
+    </column>
+    <column id="52" parent="26" name="real_name">
+      <Position>17</Position>
+      <Comment>真实姓名</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="53" parent="26" name="papers_type">
+      <Position>18</Position>
+      <Comment>证件类型</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="54" parent="26" name="identity_no">
+      <Position>19</Position>
+      <Comment>身份证号码</Comment>
+      <DataType>VARCHAR(18)|12</DataType>
+    </column>
+    <column id="55" parent="26" name="pprove_type">
+      <Position>20</Position>
+      <Comment>是否实名认证（1是2否）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="56" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>aid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="27" name="bid">
+      <Position>1</Position>
+      <Comment>Bid</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="27" name="aid">
+      <Position>2</Position>
+      <Comment>发布人ID(可为空)</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="59" parent="27" name="carport_type">
+      <Position>3</Position>
+      <Comment>车位类型（1露天2机械3地下）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="60" parent="27" name="floor">
+      <Position>4</Position>
+      <Comment>楼层</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="61" parent="27" name="carport_no">
+      <Position>5</Position>
+      <Comment>车位编号</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="62" parent="27" name="max_size">
+      <Position>6</Position>
+      <Comment>限高</Comment>
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="63" parent="27" name="car_size">
+      <Position>7</Position>
+      <Comment>车长范围</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="64" parent="27" name="rental">
+      <Position>8</Position>
+      <Comment>租金</Comment>
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="65" parent="27" name="houses_name">
+      <Position>9</Position>
+      <Comment>楼盘名称</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+    </column>
+    <column id="66" parent="27" name="province">
+      <Position>10</Position>
+      <Comment>省</Comment>
+      <DataType>VARCHAR(15)|12</DataType>
+    </column>
+    <column id="67" parent="27" name="city">
+      <Position>11</Position>
+      <Comment>市</Comment>
+      <DataType>VARCHAR(15)|12</DataType>
+    </column>
+    <column id="68" parent="27" name="region">
+      <Position>12</Position>
+      <Comment>区</Comment>
+      <DataType>VARCHAR(15)|12</DataType>
+    </column>
+    <column id="69" parent="27" name="business_circles">
+      <Position>13</Position>
+      <Comment>商圈</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="70" parent="27" name="houses_adress">
+      <Position>14</Position>
+      <Comment>楼盘地址</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+    </column>
+    <column id="71" parent="27" name="title">
+      <Position>15</Position>
+      <Comment>标题</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="72" parent="27" name="details">
+      <Position>16</Position>
+      <Comment>详情描述</Comment>
+      <DataType>TEXT(65535)|-1</DataType>
+    </column>
+    <column id="73" parent="27" name="main_img">
+      <Position>17</Position>
+      <Comment>首页图片</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="74" parent="27" name="linkman">
+      <Position>18</Position>
+      <Comment>联系人</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="75" parent="27" name="pjone">
+      <Position>19</Position>
+      <Comment>手机号</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="76" parent="27" name="is_privary">
+      <Position>20</Position>
+      <Comment>是否保密（2否1是）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="77" parent="27" name="is_sale">
+      <Position>21</Position>
+      <Comment>是否特价（2否1是）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="78" parent="27" name="sale_price">
+      <Position>22</Position>
+      <Comment>特价价格</Comment>
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="79" parent="27" name="sale_money">
+      <Position>23</Position>
+      <Comment>优惠金额</Comment>
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <column id="80" parent="27" name="issue_time">
+      <Position>24</Position>
+      <Comment>发布时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <column id="81" parent="27" name="enterprise_type">
+      <Position>25</Position>
+      <Comment>个人企业flag（1个人2企业）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="82" parent="27" name="rent_type">
+      <Position>26</Position>
+      <Comment>出租转让（1出租2转让）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="83" parent="27" name="is_putaway">
+      <Position>27</Position>
+      <Comment>是否上架（1是2否）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="84" parent="27" name="point_num">
+      <Position>28</Position>
+      <Comment>点击量</Comment>
+      <DataType>LONGTEXT(max)|-1</DataType>
+    </column>
+    <column id="85" parent="27" name="is_lower_money">
+      <Position>29</Position>
+      <Comment>是否降价（2否1是）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="86" parent="27" name="lower_money">
+      <Position>30</Position>
+      <Comment>降价后价格</Comment>
+      <DataType>DOUBLE(22)|8</DataType>
+    </column>
+    <key id="87" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>bid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="88" parent="28" name="cid">
+      <Position>1</Position>
+      <Comment>Cid</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="89" parent="28" name="bid">
+      <Position>2</Position>
+      <Comment>关联ID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="90" parent="28" name="img_url">
+      <Position>3</Position>
+      <Comment>图片地址</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+    </column>
+    <column id="91" parent="28" name="img_type">
+      <Position>4</Position>
+      <Comment>图片类型</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="92" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="93" parent="29" name="did">
+      <Position>1</Position>
+      <Comment>Did</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="94" parent="29" name="aid">
+      <Position>2</Position>
+      <Comment>用户ID（可为空）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="95" parent="29" name="bid">
+      <Position>3</Position>
+      <Comment>Bid</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="96" parent="29" name="review_type">
+      <Position>4</Position>
+      <Comment>评论类型（1差2中3好）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="97" parent="29" name="true_grade">
+      <Position>5</Position>
+      <Comment>真实度星级</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="98" parent="29" name="serve_grade">
+      <Position>6</Position>
+      <Comment>服务满意度星级</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="99" parent="29" name="review_content">
+      <Position>7</Position>
+      <Comment>评论内容</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="100" parent="29" name="review_time">
+      <Position>8</Position>
+      <Comment>评论时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <column id="101" parent="29" name="is_approve">
+      <Position>9</Position>
+      <Comment>是否认证</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="102" parent="29" name="user_name">
+      <Position>10</Position>
+      <Comment>用户名</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="103" parent="29" name="user_img">
+      <Position>11</Position>
+      <Comment>头像</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <column id="104" parent="29" name="back_type">
+      <Position>12</Position>
+      <Comment>评论还是回复（2评论1回复）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="105" parent="29" name="back_id">
+      <Position>13</Position>
+      <Comment>回复父ID（可为空）</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <key id="106" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>did</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="107" parent="30" name="eid">
+      <Position>1</Position>
+      <Comment>EID</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="30" name="bid">
+      <Position>2</Position>
+      <Comment>Bid</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="109" parent="30" name="aid">
+      <Position>3</Position>
+      <Comment>AID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="110" parent="30" name="amend_type">
+      <Position>4</Position>
+      <Comment>纠错类型</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="111" parent="30" name="amend_content">
+      <Position>5</Position>
+      <Comment>纠错内容</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="112" parent="30" name="amend_time">
+      <Position>6</Position>
+      <Comment>纠错时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <key id="113" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>eid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="114" parent="31" name="fid">
+      <Position>1</Position>
+      <Comment>Fid</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="115" parent="31" name="bid">
+      <Position>2</Position>
+      <Comment>Bid</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="116" parent="31" name="aid">
+      <Position>3</Position>
+      <Comment>AID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="117" parent="31" name="relation_time">
+      <Position>4</Position>
+      <Comment>时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <key id="118" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="119" parent="32" name="gid">
+      <Position>1</Position>
+      <Comment>GID</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="120" parent="32" name="main_id">
+      <Position>2</Position>
+      <Comment>主用户ID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="121" parent="32" name="look_id">
+      <Position>3</Position>
+      <Comment>被看用户ID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="122" parent="32" name="look_time">
+      <Position>4</Position>
+      <Comment>时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <key id="123" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>gid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="124" parent="33" name="hid">
+      <Position>1</Position>
+      <Comment>HID</Comment>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="125" parent="33" name="aid">
+      <Position>2</Position>
+      <Comment>AID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="126" parent="33" name="bid">
+      <Position>3</Position>
+      <Comment>Bid</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="127" parent="33" name="collectTime">
+      <Position>4</Position>
+      <Comment>时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <key id="128" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>hid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="129" parent="34" name="iid">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="130" parent="34" name="aid">
+      <Position>2</Position>
+      <Comment>用户ID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="131" parent="34" name="content">
+      <Position>3</Position>
+      <Comment>反馈内容</Comment>
+      <DataType>TEXT(65535)|-1</DataType>
+    </column>
+    <column id="132" parent="34" name="tel">
+      <Position>4</Position>
+      <Comment>反馈人电话</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="133" parent="34" name="i_time">
+      <Position>5</Position>
+      <Comment>反馈时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <key id="134" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>iid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="135" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="136" parent="35" name="aid">
+      <Position>2</Position>
+      <Comment>用户ID</Comment>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="137" parent="35" name="accessToken">
+      <Position>3</Position>
+      <Comment>令牌</Comment>
+      <DataType>VARCHAR(100)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="138" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+accessToken</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
